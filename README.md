@@ -20,7 +20,13 @@ The Minecraft Plugin Compiler is a tool designed to compile Minecraft plugins fr
    git clone <repository-url>
    cd Minecraft-Plugin-Compiler
    ```
-2. Build the project using Gradle:
+2. **Before building or running the project, create a `.env` file in the project root and add the GitHub link of the plugin you want to compile:**
+   ```
+   GITHUB_LINK=https://github.com/yourusername/your-minecraft-plugin
+   ```
+   Replace the value with the actual GitHub repository link you want to compile.
+
+3. Build the project using Gradle:
    ```sh
    ./gradlew build
    ```
@@ -44,4 +50,4 @@ java -cp build/classes/java/main com.example.CompilerApp "https://github.com/Pla
 Contributions are welcome! Please submit a pull request or open an issue for any enhancements or bug fixes.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for more
+This project is licensed under the MIT License. See the

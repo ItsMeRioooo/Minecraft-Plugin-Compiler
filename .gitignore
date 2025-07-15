@@ -1,8 +1,8 @@
-/build/
-/Jars/
-/.gradle/
-/out/
-/.minecraft/
+build/
+Jars/
+.gradle/
+out/
+.minecraft/
 *.iml
 *.log
 *.class

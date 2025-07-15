@@ -1,12 +1,18 @@
+import com.example.CompilerApp;
+import io.github.cdimascio.dotenv.Dotenv;
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CompilerAppTest {
 
+    private static final Dotenv dotenv = Dotenv.load();
+
     @Test
     void testCompileFromGitHubLink() {
+        String githubLink = dotenv.get("GITHUB_LINK");
         CompilerApp compilerApp = new CompilerApp();
-        String result = compilerApp.compile("https://github.com/example/minecraft-plugin");
+        String result = compilerApp.compile(githubLink);
         assertTrue(result.endsWith(".jar"), "Compilation should produce a JAR file.");
     }
 
