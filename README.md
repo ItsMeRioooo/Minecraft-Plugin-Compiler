@@ -50,4 +50,4 @@ java -cp build/classes/java/main com.example.CompilerApp "https://github.com/Pla
 Contributions are welcome! Please submit a pull request or open an issue for any enhancements or bug fixes.
 
 ## License
-This project is licensed under the MIT License. See the
+This project is licensed under the MIT License.
