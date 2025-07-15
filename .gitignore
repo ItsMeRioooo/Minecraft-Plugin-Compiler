@@ -1,0 +1,9 @@
+/build/
+/Jars/
+/.gradle/
+/out/
+/.minecraft/
+*.iml
+*.log
+*.class
+.DS_Store
